@@ -1,0 +1,107 @@
+.wrapper {
+    width: 560px;
+    height: 355px;
+    padding: 8px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px #999999;
+}
+
+.container {
+    width: 490px;
+    height: 300px;
+    border: 1px solid #d9d9d9;
+    padding: 32px 30px 17px 32px;
+    margin: 0 auto;
+    background: #fff url(../img/background-line.png) repeat-x 1px 1px;
+}
+
+
+/* header */
+.top-header {
+    height: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.container h1 {
+    font: 32px Arial, sans-serif;
+    color: #25779c;
+    float: left;
+    margin-top: 0;
+}
+
+.container h4 {
+    font: 13px Arial, sans-serif;
+    color: #909090;
+    float: right;
+    margin-top: 14px;
+}
+/* header*/
+
+
+/* content*/
+.content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.content p {
+    font: 12px Arial, sans-serif;
+    color: #494949;
+    line-height: 18px;
+}
+/* content */
+
+
+/* footer */
+.page-footer {
+    padding-top: 17px;
+    height: 35px;
+
+}
+
+.page-footer p {
+    font: 11px Arial, sans-serif;
+    color: #919191;
+    margin: 5px;
+}
+
+.page-footer p a {
+    font-family: Arial, sans-serif;
+    color: #66a0ba;
+}
+
+.footer-content {
+    width: 313px;
+    float: left;
+}
+
+.calendar::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url(../img/sprite0.png) no-repeat -41px top;
+    margin-right: 3px;
+    float: left;
+}
+
+.comment::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url(../img/sprite0.png) no-repeat -60px top;
+    margin-right: 3px;
+    float: left;
+}
+
+.wordPress::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url(../img/sprite0.png) no-repeat -1px -1px;
+    float: right;
+    margin-bottom: 0;
+}
+/* footer */

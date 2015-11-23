@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+.main-menu {
+    width: 900px;
+    margin: 30px auto;
+    background-color: #1aa4ff;
+    position: relative;
+    padding: 0 30px;
+
+}
+
+.main-menu li {
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.main-menu li:hover ul {
+    display: inline-block;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    background-color: #eeeeee;
+}
+
+.menu1, .menu2 {
+    display: none;
+    width: 100%;
+    background-color: #5cb85c;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu1 li, .menu2 li {
+    color: #898788;
+    padding: 10px 10px;
+}
+
+.main-menu li a {
+    display: block;
+    font: 18px Myriad Pro, serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 37px;
+    padding: 5px 12.5px;
+
+}
+
+.main-menu li a:hover {
+    display: block;
+    font: 18px Myriad Pro, serif;
+    color: #a0a0a0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 37px;
+    background-color: #eeeeee;
+}
+
+
+

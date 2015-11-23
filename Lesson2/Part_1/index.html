@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson2</title>
+
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <form id="myForm" class="form-horizontal" role="form">
+
+                <div class="well">
+
+                    <div class="form-group">
+                        <label for="userName" class="col-sm-2 control-label">Name</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="userName" name="name"
+                                   placeholder="Name" maxlength="20" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userSurname" class="col-sm-2 control-label">Surname</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="userSurname" name="surname"
+                                   placeholder="Surname" maxlength="20" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPatronymic" class="col-sm-2 control-label">Patronymic</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="userPatronymic" name="patronymic"
+                                   placeholder="Patronymic" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login" class="col-sm-2 control-label">Login</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="login" name="login" placeholder="Login"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password2" class="col-sm-2 control-label">Confirm Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password2" name="confPassword" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail" class="col-sm-2 control-label">Email</label>
+
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="userEmail" name="email" placeholder="Email"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="col-sm-2 control-label">Date of birthday</label>
+
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                    </div>
+
+
+                    <address>
+                        <div class="form-group">
+                            <label for="city" class="col-sm-2 control-label">City</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" id="city" name="city" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="index" class="col-sm-2 control-label">Index</label>
+
+                            <div class="col-sm-10">
+                                <input type="number" id="index" name="index" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="region" class="col-sm-2 control-label">Region</label>
+
+                            <div class="col-sm-10">
+                                <select name="region" id="region" class="form-control">
+                                    <option>Киевская</option>
+                                    <option>Винницкая</option>
+                                    <option>Хмельницкая</option>
+                                    <option>Львовская</option>
+                                    <option>Харьковская</option>
+                                    <option>Днепропетровская</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="street" class="col-sm-2 control-label">Street</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" id="street" name="index" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="house" class="col-sm-2 control-label">№</label>
+
+                            <div class="col-sm-10">
+                                <input type="number" id="house" name="house" class="form-control"/>
+                            </div>
+                        </div>
+                    </address>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Your hobbies</label>
+
+                        <div class="col-sm-2">
+                            <label>
+                                <input type="checkbox" name="football"/> Football
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="volleyball"/> Volleyball
+                            </label><br>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <label>
+                                <input type="checkbox" class="music"/> Music
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="dance"/> Dance
+                            </label>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <label>
+                                <input type="checkbox" class="books"/> Books
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="cycling"/> Cycling
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Where did you hear about us?</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" list="info" class="form-control"/>
+                            <datalist id="info">
+                                <option value="Google">
+                                <option value="Yandex">
+                                <option value="MailRu">
+                                <option value="News">
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

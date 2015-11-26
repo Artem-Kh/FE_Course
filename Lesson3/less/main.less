@@ -1,0 +1,50 @@
+.animation(@arguments) {
+  -webkit-animation: @arguments;
+     -moz-animation: @arguments;
+      -ms-animation: @arguments;
+       -o-animation: @arguments;
+          animation: @arguments;
+}
+
+
+.keyframes(@name, @frames) {
+  @-webkit-keyframes @name { @frames(); }
+     @-moz-keyframes @name { @frames(); }
+      @-ms-keyframes @name { @frames(); }
+       @-o-keyframes @name { @frames(); }
+          @keyframes @name { @frames(); }
+}
+
+
+@percent: 0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%;
+@size: 0px, -64px, -128px, -192px, -256px, -320px, -384px, -448px, 512px, -576px, -640px;
+
+.mixin(@index: 0) when (@index <= 9) {
+  @item: extract(@percent, @index);
+  @pixel: extract(@size, @index);
+
+  @{item} {
+    background-position: @pixel 0;
+  }
+
+  .mixin(@index + 1);
+}
+
+
+.loader:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  width: 64px;
+  height: 64px;
+  background: url("../img/712.GIF") no-repeat;
+
+  .animation(play 1s infinite step-end);
+}
+
+.keyframes(play,{.mixin});

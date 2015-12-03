@@ -21,12 +21,14 @@
                arr.push($(this).text());
                
            });
-            
+           
             list.each(function(){
                 $(this).text(arr[i]);
                 i++;
             })
             
+            //еще один - более компактный вариант
+           $('header nav ul').append($('header nav ul li').get().reverse());
             
             
             //////////

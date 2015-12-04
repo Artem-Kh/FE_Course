@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+        var compare = function (arr1, arr2) {
+
+            if (arr1.length == arr2.length) {
+                for (var i = 0; i < arr1.length; i++) {
+                    if (arr1[i] == arr2[i]) {
+                        return true;
+                    }
+                }
+
+            } else {
+                var bigger = [];
+                var result = false;
+
+                var sortArr = function (a, b) {
+                    return a - b;
+                };
+
+                var sum1 = arr1.reduce(function (a, b) {
+                    return a + b;
+                });
+
+                var sum2 = arr2.reduce(function (a, b) {
+                    return a + b;
+                });
+
+
+                if (sum1 == sum2) {
+                    console.log("result:" + result + ", bigger:", bigger);
+
+                } else if (sum1 > sum2) {
+                    console.log("result:" + result + ",", arr1.sort(sortArr));
+                }
+                else {
+                    console.log("result:" + result + ", bigger:", arr2.sort(sortArr));
+                }
+
+            }
+        };
+
+
+        console.log(compare([7, 2], [7, 2]));
+        compare([3, 1, 4], [8]);
+        compare([3, 1, 4], [8, 2]);
+
+
+        /////////////////////
+
+        var numbFib1 = function () {
+            var a = 1, b = 1, c = 0;
+
+            return function (n) {
+
+                if (n == 1)return a;
+                for (var i = 2; i < n; i++) {
+                    c = a + b;
+                    a = b;
+                    b = c;
+                }
+                return b;
+            }
+        }
+
+
+        var numbFib2 = function (n) {
+            return n > 1 ? numbFib2(n - 1) + numbFib2(n - 2) : n;
+        };
+
+
+        var numb = numbFib1();
+        console.log(numb(9));
+
+        console.log(numbFib2(9));
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

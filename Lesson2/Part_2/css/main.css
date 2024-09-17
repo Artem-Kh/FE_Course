@@ -1,9 +1,11 @@
 @import url(reset.css);
+.wrapper {
+    background-color: #1aa4ff;
+}
 
 .main-menu {
     width: 900px;
     margin: 30px auto;
-    background-color: #1aa4ff;
     position: relative;
     padding: 0 30px;
 
